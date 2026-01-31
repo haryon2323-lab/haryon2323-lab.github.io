@@ -3,61 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haryon Security Services | Fraud Prevention</title>
-    <meta name="description" content="Professional fraud detection and payment security solutions using MaxMind minFraud API">
+    <title>Haryon Security Services | Professional Fraud Prevention</title>
+    <meta name="description" content="Enterprise fraud detection and payment security solutions using MaxMind minFraud API">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            padding: 20px;
+        body {
+            font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
         .container {
             background: white;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            margin-top: 40px;
+            box-shadow: 0 25px 75px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 100%;
         }
         header {
             text-align: center;
             margin-bottom: 40px;
-            padding-bottom: 20px;
             border-bottom: 3px solid #667eea;
+            padding-bottom: 25px;
         }
         h1 {
             color: #2d3748;
             font-size: 2.8rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .tagline {
             color: #4a5568;
             font-size: 1.2rem;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
+        .content {
+            margin: 30px 0;
         }
-        .service-card {
-            background: #f7fafc;
-            padding: 25px;
-            border-radius: 15px;
+        .service {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
             border-left: 5px solid #667eea;
-            transition: transform 0.3s ease;
         }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
-        }
-        .contact-box {
+        .contact-section {
             background: #ebf4ff;
             padding: 30px;
             border-radius: 15px;
@@ -68,13 +61,13 @@
             display: inline-block;
             background: #667eea;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 35px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
-            margin-top: 15px;
-            transition: all 0.3s ease;
+            margin: 15px 0;
+            transition: all 0.3s;
         }
         .email:hover {
             background: #5a67d8;
@@ -82,14 +75,19 @@
         }
         footer {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 30px;
             padding-top: 20px;
             border-top: 1px solid #e2e8f0;
             color: #718096;
         }
-        @media (max-width: 768px) {
-            .container { padding: 20px; }
-            h1 { font-size: 2rem; }
+        .alert {
+            background: #fff3cd;
+            border: 1px solid #ffecb5;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -97,47 +95,48 @@
     <div class="container">
         <header>
             <h1>🔒 Haryon Security Services</h1>
-            <p class="tagline">Advanced Fraud Prevention & Payment Security Solutions</p>
+            <p class="tagline">Professional Fraud Detection & Payment Security</p>
+            <p>Enterprise solutions using MaxMind minFraud technology</p>
         </header>
 
-        <section>
-            <h2>Our Mission</h2>
-            <p>We provide enterprise-level fraud detection and transaction validation services using industry-leading technologies including MaxMind minFraud API. Protecting businesses from fraudulent activities since 2024.</p>
-        </section>
+        <div class="alert">
+            ⚠️ <strong>Important:</strong> This website is under development. For business inquiries, please use the contact email below.
+        </div>
 
-        <section>
-            <h2>Core Services</h2>
-            <div class="services">
-                <div class="service-card">
-                    <h3>Transaction Validation</h3>
-                    <p>Real-time fraud scoring and risk assessment for every payment.</p>
-                </div>
-                <div class="service-card">
-                    <h3>API Integration</h3>
-                    <p>Seamless integration with MaxMind minFraud and other security services.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Custom Solutions</h3>
-                    <p>Tailored fraud prevention systems for your specific business needs.</p>
-                </div>
+        <div class="content">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Transaction Fraud Detection</h3>
+                <p>Real-time scoring and validation of payment transactions using advanced algorithms.</p>
             </div>
-        </section>
+            <div class="service">
+                <h3>MaxMind minFraud Integration</h3>
+                <p>Seamless API integration for comprehensive fraud prevention solutions.</p>
+            </div>
+            <div class="service">
+                <h3>Custom Security Solutions</h3>
+                <p>Tailored systems to protect your business from fraudulent activities.</p>
+            </div>
+        </div>
 
-        <div class="contact-box">
-            <h2>Contact for Business Inquiries</h2>
-            <p>For integration, pricing, and technical support:</p>
+        <div class="contact-section">
+            <h2>Business Contact</h2>
+            <p>For API integration, service inquiries, and technical support:</p>
+            
             <a href="mailto:admin@haryon2323-lab.github.io" class="email">
-                admin@haryon2323-lab.github.io
+                📧 admin@haryon2323-lab.github.io
             </a>
-            <p style="margin-top: 15px; font-size: 0.9rem;">
-                Website: https://haryon2323-lab.github.io
+            
+            <p style="margin-top: 20px;">
+                <strong>Website:</strong> https://haryon2323-lab.github.io<br>
+                <strong>Service:</strong> MaxMind minFraud API Integration
             </p>
         </div>
 
         <footer>
             <p>© 2024 Haryon Security Services. All rights reserved.</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">
-                Specializing in MaxMind minFraud API integration and payment security solutions
+            <p style="font-size: 0.9rem; margin-top: 10px;">
+                Specializing in payment security and fraud prevention solutions
             </p>
         </footer>
     </div>
